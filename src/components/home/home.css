@@ -1,0 +1,287 @@
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 700px;
+    position: relative;
+}
+
+.headline{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.description{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #000000;
+    margin-top: 2%;
+    
+}
+
+.start-btn{
+    width: 215px;
+    height: 62px;
+    background: #2279FF;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.start-btn:hover{
+    background: #0061f3;
+}
+
+.start-btn span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    margin-right: 2%;
+
+    color: #FFFFFF;
+    transition: .2s ease-in-out;
+    text-decoration: none;
+}
+
+.start-btn i{
+    font-size: 18px;
+    color: #FFFFFF;
+    transition: .2s ease-in-out;
+    text-decoration: none;
+}
+
+.start-btn:hover i{
+    animation-name: start-btn_hover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.pg1_bg_1{
+    height: 60px;
+    position: absolute;
+    top: 20%;
+    left: 18%;
+}
+
+.pg1_bg_2{
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.pg1_bg_3{
+    height: 60px;
+    position: absolute;
+    bottom: 38%;
+    left: 22%;
+}
+
+.pg1_bg_4{
+    height: 100px;
+    position: absolute;
+    bottom: 10%;
+    left: 13%;
+}
+
+.pg1_bg_5{
+    height: 60px;
+    position: absolute;
+    top: 20%;
+    right: 18%;
+}
+
+.pg1_bg_6{
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+
+.pg1_bg_7{
+    height: 60px;
+    position: absolute;
+    bottom: 38%;
+    right: 22%;
+}
+
+.pg1_bg_8{
+    height: 100px;
+    position: absolute;
+    bottom: 10%;
+    right: 13%;
+}
+
+.footer{
+    position: absolute;
+    height: 5%;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer span{
+    font-family: 'Poppins';  
+    font-style: normal;
+    font-size: 15px;
+
+    color: #4E4E4E;
+}
+
+.footer a{
+    text-decoration: none;
+    color:#4E4E4E ;
+}
+
+.footer a:hover{
+    text-decoration: none;
+    color:#2279FF;
+}
+
+/*tablet view*/
+
+@media screen and (max-width:800px) {
+    .home{
+        height: 1090px;
+    }
+
+    .home_inner{
+        width: 550px;
+    }
+
+    .headline{
+        font-size: 33px;
+        line-height: 42px;
+    }
+    
+    .description{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .start-btn{
+        width: 185px;
+        height: 55px;
+    }
+    
+    .start-btn span{
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .footer{
+        position: relative;
+        margin-top: -7%;
+    }
+    
+    .start-btn i{
+        font-size: 15px;
+    }
+
+    .footer span{
+        font-size: 12px;
+    }
+
+
+
+}
+
+/*mobile view*/
+
+@media screen and (max-width:500px) {
+    .home{
+        height: 815px;
+    }
+
+    .home_inner{
+        width: 250px;
+    }
+
+    .headline{
+        font-size: 23px;
+        line-height: 32px;
+    }
+    
+    .description{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    
+    .start-btn{
+        width: 135px;
+        height: 45px;
+    }
+    
+    .start-btn span{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    
+    .start-btn i{
+        font-size: 12px;
+    }
+
+    .footer{
+        margin-top: -10%;
+    }
+
+    .footer span{
+        font-size: 9px;
+    }
+
+    .pg1_bg_1, .pg1_bg_2, .pg1_bg_3, .pg1_bg_4, .pg1_bg_5, .pg1_bg_6, .pg1_bg_7, .pg1_bg_8{
+        transform: scale(70%);
+    }
+
+    .pg1_bg_2{
+        left: -2%;
+    }
+
+    .pg1_bg_3{
+        left: 10%;
+    }
+
+    .pg1_bg_6{
+        right: -2%;
+    }
+
+    .pg1_bg_7{
+        right: 10%;
+    }
+
+    
+}
+
+
+
+

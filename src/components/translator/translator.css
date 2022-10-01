@@ -1,0 +1,228 @@
+.translator{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.translator_inner{
+    width: 50%;
+    position: relative;
+}
+
+.pg2_bg_1{
+    position: absolute;
+    top: -18%;
+    right: -17%;
+    height: 650px;
+    opacity: 60%;
+}
+
+.pg2_bg_2{
+    position: absolute;
+    bottom: -18%;
+    left: -20%;
+    height: 600px;
+    opacity: 60%;
+}
+
+.Enter-txt-container span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #000000;
+}
+
+.Enter-txt-textarea{
+    width: 100%;
+    resize:none;
+    padding: 1%;
+    border-radius: 5px;
+    position: relative;
+
+    
+}
+
+.translate-btn-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 6%;
+}
+
+.translate-btn{
+    width: 150px;
+    height: 52px;
+    background: #2279FF;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.translate-btn:hover{
+    background: #0061f3;
+}
+
+.translate-btn span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: center;
+    margin-right: 2%;
+
+    color: #FFFFFF;
+    transition: .2s ease-in-out;
+    text-decoration: none;
+}
+
+.Emoji-txt-container span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #000000;
+
+}
+
+.Emoji-txt-textarea-container{
+    position: relative;
+}
+
+.output{
+    display: none;
+}
+
+.copy-container{
+    position: absolute;
+    font-size: 25px;
+    top: 5%;
+    right: -1%;
+    cursor: pointer;
+
+}
+
+.fa-copy,.fa-square-check{
+    font-size: 25px;
+}
+
+.Emoji-txt-textarea{
+    width: 100%;
+    resize:none;
+    padding: 1%;
+    border-radius: 5px;
+
+}
+
+select{
+    appearance: none;
+}
+
+/*tablet view*/
+
+@media screen and (max-width:800px) {
+    .translator{
+        height: 1090px;
+    }
+
+    .translator_inner{
+        width: 65%;
+    }
+
+    .pg2_bg_1{
+        top: -1%;
+        right: -19%;
+        height: 450px;
+    }
+    
+    .pg2_bg_2{
+        bottom: -10%;
+        left: -25%;
+        height: 450px;
+    }
+
+}
+
+/*mobile view*/
+@media screen and (max-width:500px) {
+    .translator{
+        height: 815px;
+    }
+
+    .translator_inner{
+        width: 70%;
+    }
+
+    .pg2_bg_1{
+        top: -10%;
+        right: -48%;
+        height: 350px;
+    }
+    
+    .pg2_bg_2{
+        bottom: -15%;
+        left: -48%;
+        height: 350px;
+    }
+
+    
+    .Enter-txt-container span{
+        font-size: 15px;
+    }
+
+    .translate-btn{
+        width: 120px;
+        height: 42px;
+    }
+    
+    .translate-btn span{
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .Enter-txt-textarea{
+        font-size: 12px;
+        
+    }
+
+    .Emoji-txt-container span{
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .Emoji-txt-textarea{
+        font-size: 12px;
+    
+    }
+
+    .copy-container{
+        top: 3%;
+    
+    }
+
+    .fa-copy,.fa-square-check{
+        font-size: 20px;
+    }
+
+
+    
+}
+
+
+
+
